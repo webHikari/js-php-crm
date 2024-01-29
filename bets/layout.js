@@ -60,7 +60,7 @@ tableRows.forEach((row) => {
             
             const form = document.createElement('form');
             form.action = 'change.php';
-            form.innerHTML = 'Change bet info.';
+            form.innerHTML = 'Change bet info';
 
             const items = this.querySelectorAll('.main__table-item');
 
@@ -87,7 +87,7 @@ tableRows.forEach((row) => {
             }
 
             const submitButton = document.createElement('button');
-            submitButton.innerHTML = "Change element.";
+            submitButton.innerHTML = "Change element";
             submitButton.type = 'submit';
             form.appendChild(submitButton);
 
