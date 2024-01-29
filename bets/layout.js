@@ -60,7 +60,7 @@ tableRows.forEach((row) => {
             
             const form = document.createElement('form');
             form.action = 'change.php';
-            form.innerHTML = 'Change client info.';
+            form.innerHTML = 'Change bet info.';
 
             const items = this.querySelectorAll('.main__table-item');
 
@@ -70,9 +70,12 @@ tableRows.forEach((row) => {
                 input.type = 'text';
                 input.name = 'inputName' + i;
                 input.value = items[i].innerHTML;
-                input.placeholder = 'Client';
-                if (i == 1) {
-                    input.placeholder = 'Address';
+                if (i == 0) {
+                    input.placeholder = 'Ставка'
+                } else if (i == 1) {
+                    input.placeholder = 'Норма';
+                } else if (i == 2) {
+                    input.placeholder = 'Комментарий';
                 }
                 form.appendChild(input);
 
@@ -138,14 +141,17 @@ addButton.addEventListener('click', function () {
         const form = document.createElement('form');
         form.action = 'send.php';
         // form.method = 'POST';
-        form.innerHTML = 'Add new client.';
-        for (let i = 0; i < 2; i++) {
+        form.innerHTML = 'Add new bet.';
+        for (let i = 0; i < 3; i++) {
             const input = document.createElement('input');
             input.type = 'text';
             input.name = 'inputName' + i;
-            input.placeholder = 'Client';
-            if (i == 1) {
-                input.placeholder = 'Address';
+            if (i == 0) {
+                input.placeholder = 'Ставка'
+            } else if (i == 1) {
+                input.placeholder = 'Норма';
+            } else if (i == 2) {
+                input.placeholder = 'Комментарий'
             }
             form.appendChild(input);
         }

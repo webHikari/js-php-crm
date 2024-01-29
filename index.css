@@ -217,7 +217,7 @@ TABLE STYLES START
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid var(--dark_grey);
@@ -409,4 +409,28 @@ form button:hover {
 
 body:has(.project) > form button {
     margin-top: 20px;
+}
+
+
+.bet .main__table-row > div:nth-child(1) {
+    width: 33%;
+    text-align: center;
+}
+.bet .main__table-row > div:nth-child(2) {
+    width: 33%;
+    text-align: center;
+}
+.bet .main__table-row > div:nth-child(3) {
+    width: 33%;
+    text-align: center;
+}
+
+.bet .main__table-head > div:nth-child(1) {
+    width: 33%;
+}
+.bet .main__table-head > div:nth-child(2) {
+    width: 33%;
+}
+.bet .main__table-head > div:nth-child(3) {
+    width: 33%;
 }
