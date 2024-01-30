@@ -434,3 +434,16 @@ body:has(.project) > form button {
 .bet .main__table-head > div:nth-child(3) {
     width: 33%;
 }
+
+.article .main__table-head {
+    justify-content: flex-start;
+}
+.article .main__table-head > div {
+    width: 50%;
+    /* justify-content: flex-start; */
+    /* padding: 0 20px; */
+}
+.article .main__table-row > div {
+    width: 50%;
+    padding: 0 20px;
+}
