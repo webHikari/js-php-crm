@@ -1,12 +1,16 @@
-const checkNumber = (num) => {
-    const arr = Array.from(num.toString())
-    if (arr[0] === '-') return('<0')
-    else if (!arr[0]) {
-        if (arr[1] === '.') return('>0')
-        return('=0')
-    } else return('>0')
+const levelUp = (currentLevel) => {
+    if (!currentLevel) return 0
+    let experience = currentLevel * 375
+    arr.push(experience)
+    return experience
 }
 
-for (let i = -100; i < 100; i++) {
-    console.log(checkNumber(i));
+let currentLevel = 0;
+let arr = []
+
+for (let i = 0; i < 100; i++) {
+    console.log(levelUp(currentLevel))
+    currentLevel++
 }
+
+console.log(arr)
