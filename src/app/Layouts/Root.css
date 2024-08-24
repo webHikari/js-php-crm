@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --light-green: #E6F7D0;
+    --semi-light-green: #C9E0A9;
+    --green: #9DBD6F;
+    
+    --light-pink: #fce5e1;
+    --semi-light-pink: #F5C2B9;
+    --pink: #CF8779;
+    
+    --light-violet: #f1e0f7;
+    --semi-light-violet: #997BA2;
+    --violet: #7D5189;
+
+    --dark: #1D1D1D;
+    --white: #FEFEFE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    /* temmp */
+    min-height: 100vh;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+}
